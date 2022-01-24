@@ -57,7 +57,7 @@ spec:
     spec :
       containers:
       - name: web
-        image: socyware/conversao-temperatura:v1  
+        image: socyware/conversao-temperatura:latest  
         ports:
         - containerPort: 5000 
         env: 
@@ -84,7 +84,7 @@ spec:
   - port: 80
     targetPort: 5000
     nodePort: 30000
-  type: NodePort    
+  type: LoadBalancer    
  
 
 
